@@ -29,7 +29,6 @@ function App() {
 
   return (
     <>
-  
      <header 
         className={ header ? 'shown' : 'hidden' }>
         <img src={logo} alt="credit one header" />
@@ -40,17 +39,21 @@ function App() {
             <img src={white} alt="credit one in white text"/>
           </div>
       </header> */}
-      
-      <div>Consolidate Your Debt
-        With A Lower Rate
-      </div>
-      <div>
-        XX.XX% 
-      </div>
-      <div>Manage life's expenses
-        by transferring a balance to
-        your Credit One Bank account today
-      </div>
+      <div
+        className="text">
+
+            <div
+              style={{fontSize: "30px"}}>Consolidate Your Debt
+              With A Lower Rate
+            </div>
+            <div>
+              XX.XX% 
+            </div>
+            <div>Manage life's expenses
+              by transferring a balance to
+              your Credit One Bank account today
+            </div>
+        </div>
 
       <Button
         style={{ backgroundColor: 'orange', color: 'white' }}
@@ -68,7 +71,15 @@ function App() {
         onClick={noBtn}>
           No Thanks
       </Button>
-      <p>A fee may apply.</p>
+      <p
+        className="text">
+          A fee may apply.
+      </p>
+      <footer>
+        *See the *Disclosures and Terms Conditions'
+        on the application page by selecting 
+        the 'Accept Now' button.
+      </footer>
 
      
     </>
