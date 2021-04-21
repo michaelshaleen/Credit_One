@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
+import { useHistory } from 'react-router-dom';
 
 import { Button } from '@material-ui/core';
 import '../App/App.css';
@@ -10,25 +11,27 @@ import React, { useState } from 'react';
 
 function App() {
   const[header, setHeader] = useState(false);
+  const history = useHistory();
+
 
 
   const acceptBtn = () => {
-    alert("Clicked")
-    setHeader(true)
     if(header){
-      alert('blue')
+      setHeader(false)
+    }else{
+      setHeader(true)
     }
-   
   }
 
+  const noBtn = () => {
+    window.open("https://www.creditonebank.com/", "_blank");
+  }
 
   return (
     <>
-    <div className={ header ? 'shown' : 'hidden' }>
-       text
-    </div>
+  
      <header 
-      className="header_logo">
+        className={ header ? 'shown' : 'hidden' }>
         <img src={logo} alt="credit one header" />
       </header>
       {/* <header
@@ -50,7 +53,6 @@ function App() {
       </div>
 
       <Button
-        className="white_background"
         style={{ backgroundColor: 'orange', color: 'white' }}
         variant="contained" 
         color="primary" 
@@ -62,7 +64,8 @@ function App() {
       <Button
         style={{ backgroundColor: 'grey', color: 'white' }}
         variant="contained" 
-        color="primary">
+        color="primary"
+        onClick={noBtn}>
           No Thanks
       </Button>
       <p>A fee may apply.</p>
