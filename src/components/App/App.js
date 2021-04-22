@@ -76,19 +76,22 @@ function App() {
                 to your Credit One Bank 
                 account today
             </div>
-          <Button
-              style={{ 
-                backgroundColor: 'orange', 
-                color: 'white',
-                margin: '10px',
-                textTransform: "capitalize"}}
-              variant="contained" 
-              color="primary" 
-              onClick={acceptBtn}>
-                Accept Now
-          </Button>
-          {/* no thanks button */}
-        <No />
+          <div
+            className="buttonDiv">
+              <Button
+                  style={{ 
+                    backgroundColor: 'orange', 
+                    color: 'white',
+                    margin: '10px',
+                    textTransform: "capitalize"}}
+                    variant="contained" 
+                    color="primary" 
+                    onClick={acceptBtn}>
+                    Accept Now
+              </Button>
+              {/* no thanks button */}
+            <No />
+        </div>  
           <p
             className="text"
             style={{fontSize: "12px"}}>
