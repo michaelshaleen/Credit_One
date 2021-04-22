@@ -1,3 +1,4 @@
+import './No.css';
 import { Button } from '@material-ui/core';
 
 import React from 'react'
@@ -12,7 +13,6 @@ function No() {
   
   return (
     <Button
-
             style={{ 
               backgroundColor: 'grey', 
               color: 'black', 

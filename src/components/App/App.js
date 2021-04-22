@@ -80,7 +80,8 @@ function App() {
               style={{ 
                 backgroundColor: 'orange', 
                 color: 'white',
-                margin: '10px'}}
+                margin: '10px',
+                textTransform: "capitalize"}}
               variant="contained" 
               color="primary" 
               onClick={acceptBtn}>
