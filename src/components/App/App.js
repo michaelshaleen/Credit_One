@@ -60,12 +60,14 @@ function App() {
                     <b>XX.XX%</b>
                   
                 </div>
-                  {/* <div
+            </div>
+                   <div
                     className="text3">
                     <b>Promotional APR</b><br></br>
                       now through<br></br>
                       <b>XX/XX/XXXX</b>
                     </div>
+                    {/*
                     <div class="vertical-divider">
                         <p class="center-element"></p>
                       </div>
@@ -75,7 +77,6 @@ function App() {
                       will apply after the<br></br>
                       promotional period*
                   </div> */}
-            </div>
             <div
                 className="text5">
                 Manage life's expenses by 
