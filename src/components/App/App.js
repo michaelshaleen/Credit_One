@@ -1,36 +1,39 @@
+// import images
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
 import { Button } from '@material-ui/core';
+
+// components
+import Footer from '../Footer/Footer';
 import No from '../NoBtn/No';
-import '../App/App.css';
+import './App.css';
 // import Header from '../Header/Header';
 // import Accept from '../Accept_Btn/Accept';
-import Footer from '../Footer/Footer';
 import React, { useState } from 'react';
 
 
 function App() {
+  // used for conditional rendering on header
   const[header, setHeader] = useState(true);
-let image = '';
-
+  
 
   const acceptBtn = () => {
     if(header){
       setHeader(false);
-
     }else{
       setHeader(true); 
-      
     }
   }
 
   return (
     <>
+    {/* if true show white background and
+    logo image, if false show blue background and 
+    white image */}
      <header
          className={ header ? 'white' : 'blue' }>
         {header && <img src={logo} alt="logo" className="logo"/> }
         {!header && ( <img src={white} alt="logo" />)}
-   
       </header>
       <div  
         className="body">
@@ -72,17 +75,18 @@ let image = '';
                 transferring a balance
                 to your Credit One Bank 
                 account today
-              </div>
+            </div>
           <Button
-            style={{ 
-              backgroundColor: 'orange', 
-              color: 'white',
-              margin: '10px'}}
-            variant="contained" 
-            color="primary" 
-            onClick={acceptBtn}>
-              Accept Now
-        </Button>
+              style={{ 
+                backgroundColor: 'orange', 
+                color: 'white',
+                margin: '10px'}}
+              variant="contained" 
+              color="primary" 
+              onClick={acceptBtn}>
+                Accept Now
+          </Button>
+          {/* no thanks button */}
         <No />
           <p
             className="text"
@@ -90,7 +94,6 @@ let image = '';
               A fee may apply.
           </p>
           <Footer />
-
       </div>
     </>
   );
