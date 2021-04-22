@@ -1,6 +1,7 @@
 // import images
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
+import userImg from '../../assets/pexels-andrea.jpg';
 import { Button } from '@material-ui/core';
 
 // components
@@ -35,6 +36,11 @@ function App() {
         {header && <img src={logo} alt="logo" className="logo"/> }
         {!header && ( <img src={white} alt="logo" />)}
       </header>
+      <div
+        >
+        <img className="userImg" src={userImg} alt="user_img" />
+      </div>
+      
       <div  
         className="body">
           <div
@@ -51,9 +57,10 @@ function App() {
               className="text2">
                 <div
                   className="percents">
-                  XX.XX%
+                    <b>XX.XX%</b>
+                  
                 </div>
-                  <div
+                  {/* <div
                     className="text3">
                     <b>Promotional APR</b><br></br>
                       now through<br></br>
@@ -67,7 +74,7 @@ function App() {
                       A <b>XX.XX% variable APR</b><br></br>
                       will apply after the<br></br>
                       promotional period*
-                  </div>
+                  </div> */}
             </div>
             <div
                 className="text5">
