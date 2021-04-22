@@ -1,8 +1,7 @@
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
-import { useHistory } from 'react-router-dom';
-
 import { Button } from '@material-ui/core';
+import No from '../NoBtn/No';
 import '../App/App.css';
 // import Header from '../Header/Header';
 // import Accept from '../Accept_Btn/Accept';
@@ -11,56 +10,30 @@ import React, { useState } from 'react';
 
 
 function App() {
-  const[header, setHeader] = useState(false);
-  const[img, setImg] = useState(false);
-  const history = useHistory();
-
+  const[header, setHeader] = useState(true);
+let image = '';
 
 
   const acceptBtn = () => {
     if(header){
       setHeader(false);
-      setImg(true);
 
     }else{
-      setHeader(true);
-      setImg(true);
+      setHeader(true); 
+      
     }
-  }
-
-  if(img){
-    <header 
-        className={ header ? 'shown' : 'hidden' }>
-        <img src={logo} alt="credit one header" />
-      </header>
-  }else{
-    <header 
-        className={ header ? 'shown' : 'hidden' }>
-        <img src={white} alt="credit one header" />
-      </header>
-  }
-
-  const noBtn = () => {
-    window.open("https://www.creditonebank.com/", "_blank");
   }
 
   return (
     <>
-     <header 
-        className={ header ? 'shown' : 'hidden' }>
-        <img src={logo} alt="credit one header" />
+     <header
+         className={ header ? 'white' : 'blue' }>
+        {header && <img src={logo} alt="logo" className="logo"/> }
+        {!header && ( <img src={white} alt="logo" />)}
+   
       </header>
-      {/* <header
-        className="white_logo">
-          <div>
-            <img src={white} alt="credit one in white text"/>
-          </div>
-      </header> */}
-
       <div  
         className="body">
-
-            
           <div
             className="text1">
                 <div>
@@ -75,7 +48,6 @@ function App() {
               className="text2">
                 <div
                   className="percents">
-
                   XX.XX%
                 </div>
                   <div
@@ -94,18 +66,13 @@ function App() {
                       promotional period*
                   </div>
             </div>
-         
-
-              <div
+            <div
                 className="text5">
                 Manage life's expenses by 
                 transferring a balance
                 to your Credit One Bank 
                 account today
               </div>
-                
-          
-
           <Button
             style={{ 
               backgroundColor: 'orange', 
@@ -116,15 +83,7 @@ function App() {
             onClick={acceptBtn}>
               Accept Now
         </Button>
-
-
-          <Button
-            style={{ backgroundColor: 'grey', color: 'white' }}
-            variant="contained" 
-            color="primary"
-            onClick={noBtn}>
-              No Thanks
-          </Button>
+        <No />
           <p
             className="text"
             style={{fontSize: "12px"}}>
@@ -133,9 +92,6 @@ function App() {
           <Footer />
 
       </div>
-      
-
-     
     </>
   );
 }
