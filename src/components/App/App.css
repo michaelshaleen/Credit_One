@@ -13,7 +13,9 @@ header img{
   height: 50px;
   padding-left: 60px;
   margin-bottom: 70px;
-
+}
+header{
+  padding-bottom: 70px;
 }
 
 .blue{
