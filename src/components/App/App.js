@@ -1,6 +1,7 @@
 // import images
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
+import leaf from '../../assets/leaf.jpg';
 import userImg from '../../assets/pexels-andrea.jpg';
 import { Button } from '@material-ui/core';
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+    <div className="bankParallax"></div>
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -59,6 +61,9 @@ function App() {
                 <div class="vertical-divider">
                   <p class="center-element"></p>
                 </div>
+                {/* <div class="h-divider">
+                    <div class="shadow"></div>
+               </div> */}
                    
                 <div className="text4">
                    A <b>XX.XX% variable APR</b><br></br>
@@ -94,6 +99,8 @@ function App() {
           </p>
           <Footer />
       </div>
+      
+      <div className="knightsParallax"></div>
     </>
   );
 }
