@@ -36,10 +36,8 @@ function App() {
         {header && <img src={logo} alt="logo" className="logo"/> }
         {!header && ( <img src={white} alt="logo" />)}
       </header>
-      <div
-        >
-        <img className="userImg" src={userImg} alt="user_img" />
-      </div>
+      
+      
       
       <div  
         className="body">
@@ -47,6 +45,7 @@ function App() {
             className="text1">
                 <div>
                   Consolidate Your Debt
+                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
                 </div>
                 <div>
                     With A Lower Rate
@@ -67,16 +66,17 @@ function App() {
                       now through<br></br>
                       <b>XX/XX/XXXX</b>
                     </div>
-                    {/*
+                      
                     <div class="vertical-divider">
                         <p class="center-element"></p>
                       </div>
+                   
                     <div
                       className="text4">
                       A <b>XX.XX% variable APR</b><br></br>
                       will apply after the<br></br>
                       promotional period*
-                  </div> */}
+                  </div> 
             <div
                 className="text5">
                 Manage life's expenses by 
@@ -101,7 +101,7 @@ function App() {
             <No />
         </div>  
           <p
-            className="text"
+            className="text6"
             style={{fontSize: "12px"}}>
               A fee may apply.
           </p>

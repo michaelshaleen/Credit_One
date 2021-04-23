@@ -1,3 +1,4 @@
+/* desktop display */
 *{
   align-items: center;
 }
@@ -7,14 +8,16 @@ header {
 }
 .body{
   padding-left: 60px;
+  padding-top: 40px;
 
   /* background-image: url('../../assets/pexels-andrea-piacquadio-920382\ \(1\).jpg'); */
   /* background-image: linear-gradient(90deg); */
 }
 
 .userImg{
-  width: 10vw;
-  height: 10vh;
+  width: 40vw;
+  height: 100vh;
+  padding-left: 50vw;
 }
 
 header img{
@@ -71,7 +74,7 @@ header{
 .text5{
   color: rgb(49, 105, 179);
   font-size: 17px;
-  width: 65vw;
+  width: 55vw;
   font-weight: bold;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -106,7 +109,9 @@ footer{
 .vertical-divider .center-element {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+  display: table-row;
+
 }
 .vertical-divider .center-element:before,
 .vertical-divider .center-element:after {
@@ -122,11 +127,11 @@ footer{
   margin-bottom: 20px;
 }
 
-/* show for desktop */
-@media only screen and (max-width: 360px){
+/* show for mobile view */
+@media only screen and (max-width: 400px){
   .blue{
     width: 100vw;
-    color: rgb(49, 105, 179);
+    color: red;
     padding-bottom: 70px;
   }
   .text1{
@@ -148,8 +153,29 @@ footer{
     height: 10vh;
     width: 15vw;
     text-align: center;
+    padding-left: 20vw;
+    padding-bottom: 10vh;
+  }
+  .text4{
+    color: rgb(49, 105, 179);
+    font-size: 10px;
+    height: 10vh;
+    width: 15vw;
+    text-align: center;
+    padding-left: 20vw;
+    padding-bottom: 10vh;
 
-    
+  }
+  .vertical-divider .center-element {
+    position: relative;
+    display: none;
+    vertical-align: middle;
+  
+  }
+  .text6{
+    padding-left: 15vw;
+    color: rgb(49, 105, 179);
+
   }
 
   
