@@ -153,8 +153,7 @@ footer{
     align-items: center;
   }
   .text3{
-    /* color: rgb(49, 105, 179); */
-    color: red;
+    color: rgb(49, 105, 179);
     font-size: 10px;
     height: 10vh;
     width: 15vw;
