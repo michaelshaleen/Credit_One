@@ -151,6 +151,8 @@ footer{
   background-size: cover;
 }
 
+
+/* //////////////////////////////// */
 /* show for mobile view */
 @media only screen and (max-width: 400px){
   .blue{
@@ -192,17 +194,38 @@ footer{
     text-align: center;
     display: block;
   }
-  .vertical-divider .center-element {
-    position: relative;
-    display: none;
-    vertical-align: middle;
-  
-  }
   .text6{
     padding-left: 15vw;
     color: rgb(49, 105, 179);
-
   }
 
+  .vertical-divider {
+    position: absolute;
+    /* display: table; */
+    height: 25%;
+    width: 100%;
+  }
+  .vertical-divider .center-element {
+    position: relative;
+    /* vertical-align: middle; */
+    display: table-row;
+  
+  }
+  .vertical-divider .center-element:before,
+  .vertical-divider .center-element:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    left: 38%;
+    border-bottom: 1px solid rgb(49, 105, 179);
+  }
+  .vertical-divider .center-element:before {
+    bottom: 10%;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+
+  
   
 }

@@ -61,6 +61,9 @@ function App() {
                 <div class="vertical-divider">
                   <p class="center-element"></p>
                 </div>
+                {/* <div class="h-divider">
+                    <div class="shadow"></div>
+               </div> */}
                    
                 <div className="text4">
                    A <b>XX.XX% variable APR</b><br></br>
