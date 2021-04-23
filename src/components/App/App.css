@@ -118,11 +118,11 @@ footer{
   position: absolute;
   content: "";
   width: 1px;
-  left: 35%;
+  left: 38%;
   border-left: 1px solid black;
 }
 .vertical-divider .center-element:before {
-  bottom: 40%;
+  bottom: 10%;
   top: 0;
   margin-bottom: 20px;
 }

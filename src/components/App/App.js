@@ -54,29 +54,28 @@ function App() {
           
             <div
               className="text2">
-                <div
+                <span
                   className="percents">
                     <b>XX.XX%</b>
-                  
-                </div>
-            </div>
-                   <div
+                </span>
+                   <span
                     className="text3">
                     <b>Promotional APR</b><br></br>
                       now through<br></br>
                       <b>XX/XX/XXXX</b>
-                    </div>
+                    </span>
                       
                     <div class="vertical-divider">
                         <p class="center-element"></p>
                       </div>
                    
-                    <div
+                    <span
                       className="text4">
                       A <b>XX.XX% variable APR</b><br></br>
                       will apply after the<br></br>
                       promotional period*
-                  </div> 
+                  </span> 
+                </div>
             <div
                 className="text5">
                 Manage life's expenses by 
