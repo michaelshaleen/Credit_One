@@ -1,6 +1,7 @@
 // import images
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
+import leaf from '../../assets/leaf.jpg';
 import userImg from '../../assets/pexels-andrea.jpg';
 import { Button } from '@material-ui/core';
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <>
+    <div className="bankParallax"></div>
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -94,6 +96,8 @@ function App() {
           </p>
           <Footer />
       </div>
+      
+      <div className="knightsParallax"></div>
     </>
   );
 }

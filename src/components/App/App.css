@@ -1,12 +1,13 @@
 /* desktop display */
 *{
   align-items: center;
-  
 }
 header {
   width: 100vw;
   height: 3vh;
 }
+
+
 .body{
   padding-left: 60px;
   padding-top: 40px;
@@ -133,6 +134,23 @@ footer{
   margin-bottom: 20px;
 }
 
+.bankParallax {
+  background-image: url("https://www.enr.com/ext/resources/Issues/Southwest_Issues/2018/11-November/12-November/Credit-One-Bank-Corporate-Headquarters-_-Campus.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.knightsParallax {
+  background-image: url("https://www.sportsbusinessjournal.com/-/media/Images/Daily/2018/08/21/buzz-VGK.ashx");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* show for mobile view */
 @media only screen and (max-width: 400px){
   .blue{
@@ -147,6 +165,10 @@ footer{
     text-align: center;
     padding-bottom: 30px;
   }
+  .text2{
+    display: block;
+    width: 30vw;
+  }
   .userImg{
     width: 100vw;
     height: 20vh;
@@ -158,8 +180,9 @@ footer{
     height: 10vh;
     width: 15vw;
     text-align: center;
-    padding-left: 20vw;
+    padding-left: 18vw;
     padding-bottom: 10vh;
+    display: block;
   }
   .text4{
     color: rgb(49, 105, 179);
@@ -167,9 +190,7 @@ footer{
     height: 10vh;
     width: 15vw;
     text-align: center;
-    padding-left: 20vw;
-    padding-bottom: 10vh;
-
+    display: block;
   }
   .vertical-divider .center-element {
     position: relative;
