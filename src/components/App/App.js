@@ -32,59 +32,47 @@ function App() {
     logo image, if false show blue background and 
     white image */}
      <header
-         className={ header ? 'white' : 'blue' }>
-        {header && <img src={logo} alt="logo" className="logo"/> }
-        {!header && ( <img src={white} alt="logo" />)}
-      </header>
-      <div
-        >
-        <img className="userImg" src={userImg} alt="user_img" />
-      </div>
+       className={ header ? 'white' : 'blue' }>
+          {header && <img src={logo} alt="logo" className="logo"/> }
+          {!header && ( <img src={white} alt="logo" />)}
+    </header>
       
-      <div  
-        className="body">
-          <div
-            className="text1">
+      <div className="body">
+          <div className="text1">
                 <div>
                   Consolidate Your Debt
+                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
                 </div>
                 <div>
                     With A Lower Rate
                 </div>
           </div>
-          
-            <div
-              className="text2">
-                <div
-                  className="percents">
+           <div className="text2">
+                <div className="percents">
                     <b>XX.XX%</b>
-                  
                 </div>
-                  {/* <div
-                    className="text3">
-                    <b>Promotional APR</b><br></br>
-                      now through<br></br>
-                      <b>XX/XX/XXXX</b>
-                    </div>
-                    <div class="vertical-divider">
-                        <p class="center-element"></p>
-                      </div>
-                    <div
-                      className="text4">
-                      A <b>XX.XX% variable APR</b><br></br>
-                      will apply after the<br></br>
-                      promotional period*
-                  </div> */}
+                <div className="text3">
+                  <b>Promotional APR</b><br></br>
+                  now through<br></br>
+                  <b>XX/XX/XXXX</b>
+                </div>  
+                <div class="vertical-divider">
+                  <p class="center-element"></p>
+                </div>
+                   
+                <div className="text4">
+                   A <b>XX.XX% variable APR</b><br></br>
+                   will apply after the<br></br>
+                   promotional period*
+                </div> 
             </div>
-            <div
-                className="text5">
+            <div className="text5">
                 Manage life's expenses by 
                 transferring a balance
                 to your Credit One Bank 
                 account today
             </div>
-          <div
-            className="buttonDiv">
+          <div className="buttonDiv">
               <Button
                   style={{ 
                     backgroundColor: 'orange', 
@@ -100,7 +88,7 @@ function App() {
             <No />
         </div>  
           <p
-            className="text"
+            className="text6"
             style={{fontSize: "12px"}}>
               A fee may apply.
           </p>
