@@ -29,7 +29,6 @@ function App() {
 
   return (
     <>
-    <div className="bankParallax"></div>
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -100,7 +99,6 @@ function App() {
           <Footer />
       </div>
       
-      <div className="knightsParallax"></div>
     </>
   );
 }
