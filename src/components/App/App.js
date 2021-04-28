@@ -29,6 +29,7 @@ function App() {
 
   return (
     <>
+                  <img className="userImg" src={userImg} alt="user_img" />
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -42,8 +43,6 @@ function App() {
           <div className="text1">
                 <div>
                   Consolidate Your Debt
-                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
-                  
                 </div>
                 <div>
                     With A Lower Rate
@@ -54,9 +53,9 @@ function App() {
                     <b>XX.XX%</b>
                 </div>
                 <div className="text3">
-                  <b>Promotional APR</b><br></br>
-                  now through<br></br>
-                  <b>XX/XX/XXXX</b>
+                  <b>Promotional APR </b>
+                  now through
+                  <b> XX/XX/XXXX</b>
                 </div>  
                 <div className="divide bar"></div>
                 
