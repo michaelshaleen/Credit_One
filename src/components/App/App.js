@@ -2,7 +2,7 @@
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
 import leaf from '../../assets/leaf.jpg';
-import userImg from '../../assets/pexels-andrea.jpg';
+import userImg from '../../assets/image.jpg';
 import { Button } from '@material-ui/core';
 
 // components
@@ -43,6 +43,7 @@ function App() {
                 <div>
                   Consolidate Your Debt
                   {/* <img className="userImg" src={userImg} alt="user_img" /> */}
+                  
                 </div>
                 <div>
                     With A Lower Rate
@@ -57,9 +58,8 @@ function App() {
                   now through<br></br>
                   <b>XX/XX/XXXX</b>
                 </div>  
-                <div class="vertical-divider">
-                  <p class="center-element"></p>
-                </div>
+                <div className="divide bar"></div>
+                
                 {/* <div class="h-divider">
                     <div class="shadow"></div>
                </div> */}

@@ -12,9 +12,7 @@ header {
   padding-left: 60px;
   padding-top: 40px;
   background-color: rgb(226, 221, 221);
-
-  /* background-image: url('../../assets/pexels-andrea-piacquadio-920382\ \(1\).jpg'); */
-  /* background-image: linear-gradient(90deg); */
+  /* background-image: url('../../assets/image.jpg');  background-image: linear-gradient(90deg); */
 }
 
 header img{
@@ -107,32 +105,26 @@ footer{
   padding-top: 100px;
 }
 
-.vertical-divider {
-  position: absolute;
-  display: table;
-  height: 25%;
-  width: 100%;
-}
-.vertical-divider .center-element {
-  position: relative;
-  display: table-cell;
-  /* vertical-align: middle; */
-  display: table-row;
 
-}
-.vertical-divider .center-element:before,
-.vertical-divider .center-element:after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  left: 38%;
-  border-left: 1px solid rgb(49, 105, 179);
-}
-.vertical-divider .center-element:before {
-  bottom: 10%;
-  top: 0;
-  margin-bottom: 20px;
-}
+
+.userImg{
+  background: linear-gradient(90deg, transparent, white);
+  /* 
+        /* url("https://mdn.mozillademos.org/files/15525/critters.png"); */
+        /* url('../../assets/image.jpg');*/
+  }
+
+  .divide{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: rgb(49, 105, 179);
+    position: absolute;
+    left: 47vw;
+
+  
+  }
 
 
 
@@ -144,6 +136,21 @@ footer{
   .blue{
     width: 100vw;
     padding-bottom: 70px;
+  }
+  .divide{
+    display: none;
+  }
+  .bar{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: rgb(49, 105, 179);
+    position: absolute;
+    left: 38vw;
+    top: 93vh;
+    
+
   }
   .text1{
     color: rgb(49, 105, 179);
@@ -194,7 +201,7 @@ footer{
   .vertical-divider .center-element {
     position: relative;
     /* vertical-align: middle; */
-    display: table-row;
+    display: none
   
   }
   .vertical-divider .center-element:before,
