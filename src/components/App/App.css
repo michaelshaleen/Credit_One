@@ -11,7 +11,7 @@ header {
   /* padding-top: 40px; */
   background: linear-gradient(to left, transparent, white),
                url('../../assets/image.jpg') no-repeat 25px 0px;
-  background-size: cover;
+  background-size:cover;
   /* width: 100vw; */
 }
 
