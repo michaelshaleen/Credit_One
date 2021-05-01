@@ -1,22 +1,23 @@
 /* desktop display */
-*{
-  align-items: center;
-}
+
 header {
   width: 100vw;
-  height: 3vh;
+  height: 1px;
 }
 
 
 .body{
   padding-left: 60px;
-  padding-top: 40px;
-  background-color: rgb(226, 221, 221);
-  /* background-image: url('../../assets/image.jpg');  background-image: linear-gradient(90deg); */
+  /* padding-top: 40px; */
+  background: linear-gradient(to left, transparent, white),
+               url('../../assets/image.jpg') no-repeat 25px 0px;
+  background-size: cover;
+  /* width: 100vw; */
 }
 
+
 header img{
-  height: 40px;
+  height: 35px;
   padding-left: 60px;
   padding-top: 20px;
   margin-bottom: 30px;
@@ -47,6 +48,9 @@ header{
   width: 52vw;
   font-weight: bold;
   text-align: left;
+  padding-bottom: 10px;
+  padding-top: 40px;
+
 }
 .text2{
   display: inline-flex;
@@ -55,15 +59,14 @@ header{
 .text3{
   color: rgb(49, 105, 179);
   font-size: 10px;
-  padding-left: 5vw;
-  height: 10vh;
+  padding-left: 1vw;
   min-width: 90px;
 }
 .text4{
   color: rgb(49, 105, 179);
   font-size: 10px;
   /* padding-right: 50vw;*/
-  padding-left: 5vw; 
+  padding-left: 3vw; 
   min-width: 150px;
 }
 
@@ -79,19 +82,19 @@ header{
   font-weight: bold;
   padding-bottom: 50px;
   padding-top: 50px;
-  text-align: center;
+  text-align: left;
   
 }
 
 .text6{
-  padding-left: 15vw;
+  padding-left: 10px;
   color: rgb(49, 105, 179);
-
+  text-align: left;
 }
 
 .buttonDiv{
   width: 50vw;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -103,16 +106,17 @@ footer{
   color:rgb(170, 157, 157);
   width: 350px;
   padding-top: 100px;
+  
 }
 
 
 
 .userImg{
+  left: 200px;
   height: 100px;
-  width: 200px;
-  background: url('../../assets/image.jpg');
-  /* background: linear-gradient(to left, transparent, white),
-              url('../../assets/image.jpg'); */
+  width: 100px;
+
+ 
   }
 
   .divide{
@@ -122,7 +126,7 @@ footer{
     height: 40px;
     background: rgb(49, 105, 179);
     position: absolute;
-    left: 50vw;
+    left: 44vw;
   }
 
 
@@ -140,6 +144,7 @@ footer{
     width: 100vw;
     padding-bottom: 70px;
   }
+  
   .divide{
     display: none;
   }

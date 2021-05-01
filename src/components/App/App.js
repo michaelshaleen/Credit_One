@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-                  <img className="userImg" src={userImg} alt="user_img" />
+                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -39,7 +39,7 @@ function App() {
           {!header && ( <img src={white} alt="logo" />)}
     </header>
       
-      <div className="body">
+      <div className="body mobileBody">
           <div className="text1">
                 <div>
                   Consolidate Your Debt
