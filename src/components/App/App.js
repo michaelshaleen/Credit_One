@@ -2,7 +2,7 @@
 import logo from '../../assets/logo.svg';
 import white from '../../assets/logo_white.svg';
 import leaf from '../../assets/leaf.jpg';
-import userImg from '../../assets/pexels-andrea.jpg';
+import userImg from '../../assets/image.jpg';
 import { Button } from '@material-ui/core';
 
 // components
@@ -29,6 +29,7 @@ function App() {
 
   return (
     <>
+                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
     {/* if true show white background and
     logo image, if false show blue background and 
     white image */}
@@ -38,11 +39,10 @@ function App() {
           {!header && ( <img src={white} alt="logo" />)}
     </header>
       
-      <div className="body">
+      <div className="body mobileBody">
           <div className="text1">
                 <div>
                   Consolidate Your Debt
-                  {/* <img className="userImg" src={userImg} alt="user_img" /> */}
                 </div>
                 <div>
                     With A Lower Rate
@@ -53,13 +53,12 @@ function App() {
                     <b>XX.XX%</b>
                 </div>
                 <div className="text3">
-                  <b>Promotional APR</b><br></br>
-                  now through<br></br>
-                  <b>XX/XX/XXXX</b>
+                  <b>Promotional APR </b>
+                  now through
+                  <b> XX/XX/XXXX</b>
                 </div>  
-                <div class="vertical-divider">
-                  <p class="center-element"></p>
-                </div>
+                <div className="divide bar"></div>
+                
                 {/* <div class="h-divider">
                     <div class="shadow"></div>
                </div> */}
