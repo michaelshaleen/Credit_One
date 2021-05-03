@@ -140,6 +140,11 @@ footer{
   *{
     align-items: center;
   }
+  body{
+    background-size: cover;
+   
+
+  }
   .blue{
     width: 100vw;
     padding-bottom: 70px;
